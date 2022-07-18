@@ -1,0 +1,14 @@
+h2{
+    text-align: center;
+}
+
+#todo {
+    text-align: center;
+}
+
+ul {
+    padding-left: 220px;
+}
+#btn{
+    cursor: pointer;
+}
