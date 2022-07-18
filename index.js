@@ -15,11 +15,12 @@ const btn = document.getElementById("btn").addEventListener('click',clicked);
 
 function clicked(){
     
+  
   const del = document.createElement('button');
-  del.innerText = 'Delete'
+  del.innerHTML = "&#10062"
     
   const edit = document.createElement('button');
-  edit.innerHTML = 'edit'
+  edit.innerHTML = "&#128397"
   //const save = document.createElement('button');
   //save.innerText = 'save'
 
@@ -27,10 +28,15 @@ function clicked(){
   
   const newlist = document.createElement('li');
   const label = document.createElement('label');
+  label.style.width = "50%" 
+  label.style.float= "left"
   const input = document.createElement('input');
+  input.style.width = "50%" 
+  input.style.float= "left"
+  
   input.value = a
   label.innerText = a ;
-  
+
   newlist.appendChild(label);
   newlist.appendChild(input)
   newlist.appendChild(del);  
@@ -38,6 +44,8 @@ function clicked(){
   //newlist.appendChild(save);
   list.appendChild(newlist);
   input.style.display = 'none';
+  
+  
   //save.style.display = 'none';    
     
    
@@ -70,7 +78,7 @@ function clicked(){
     if(/*edit.innerText = "save"*/ count == 0){
        //edit.innerText = "edit";
       count = 1;
-      edit.innerHTML ="save"
+      edit.innerHTML ="&#9989"
         // label.appendChild(input)
         label.innerText = input.value ;
         input.style.display = 'inline';
@@ -87,7 +95,7 @@ function clicked(){
       label.style.display = 'inline';
       //input.appendChild(label)
       //edit.addEventListener('click',(e)=>{
-      edit.innerHTML = "edit";
+      edit.innerHTML = "&#128397";
 
       newlist.appendChild(label);
       newlist.appendChild(input)
